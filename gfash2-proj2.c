@@ -218,14 +218,8 @@ int intersection( PointSet set, Point3D point ){
         if(point.coordinates[Y]>=set.lower[Y] && point.coordinates[Y] <= set.upper[Y]){
             if(point.coordinates[Z]>=set.lower[Z] && point.coordinates[Z] <= set.upper[Z]) {
                 return 1;
-            }else{
-                return 0;
             }
-        }else{
-            return 0;
-        }
-    }else{
-        return 0;
+	}
     }
     return 0;
 } //end intersection()
